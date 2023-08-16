@@ -1,0 +1,132 @@
+.navbar {
+  background-color: #0c356a;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+.logo {
+  height: 5rem;
+  cursor: wait;
+}
+.contactUs {
+  height: 3rem;
+  width: 8rem;
+  border: none;
+  border-radius: 20rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contactUs:hover {
+  background: #279eff;
+  border: 1px solid #279eff;
+  box-shadow: 1px 1px 11px 2px #279eff;
+}
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-list li {
+  margin-right: 15px;
+}
+
+.nav-list .Link {
+  color: #fff;
+  text-decoration: none;
+}
+.nav-list .Link:hover {
+  color: #279eff;
+}
+
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  .mobile-menu-button {
+    display: block;
+    font-size: 36px;
+  }
+  .contactUs {
+    display: none;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #0c356a;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .nav-list.active {
+    flex-direction: column;
+    background-color: #28558f;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 94%;
+    z-index: 999;
+    height: 51rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 1rem;
+    border-radius: 40px;
+    opacity: 0.9;
+  }
+
+  .nav-list li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 850px) {
+  html {
+    font-size: 15px;
+  }
+  .logo {
+    height: 3rem;
+  }
+  .contactUs {
+    display: none;
+  }
+  .nav-list.active {
+    flex-direction: column;
+    background-color: #28558f;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 94%;
+    z-index: 999;
+    height: 51rem;
+  }
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1940px) {
+  html {
+    font-size: 22px;
+  }
+}
