@@ -168,7 +168,7 @@ function Home() {
         </div>
         <div className="contactUsNow_parent">
           <button className="contactUsNow">تواصل معنا الان</button>
-          <div>ميزات الموقع والتطبيق معنا</div>
+          <button>اكتشف مجموعتنا الكامله من خدمات التسويق الرقمي</button>
         </div>
       </section>
     </>

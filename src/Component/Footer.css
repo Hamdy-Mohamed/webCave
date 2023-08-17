@@ -1,0 +1,44 @@
+footer {
+  background: #0c356a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer_logo :nth-child(2) {
+  width: 20rem;
+}
+
+footer div {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+}
+footer div:hover {
+  color: #010102;
+  cursor: pointer;
+}
+
+footer :nth-child(n) {
+  margin: 0.5rem;
+}
+
+/* fontAwasme  */
+
+i {
+  color: black;
+  rotate: -180deg;
+}
+
+@media (max-width: 800px) {
+  footer p {
+    text-align: center;
+  }
+  footer {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_logo :nth-child(2) {
+    width: 30rem;
+  }
+}
