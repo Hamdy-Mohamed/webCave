@@ -95,3 +95,196 @@
     width: 15rem;
   }
 }
+
+.sec2_title {
+  height: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sec2_title :nth-child(3) {
+  height: 4rem;
+  width: 14rem;
+  border: none;
+  border-radius: 11px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: 2px solid #0c356a;
+  position: relative;
+}
+.sec2_title :nth-child(3):hover {
+  background: #0c356a;
+  color: white;
+}
+
+.sec2_title :nth-child(3)::before {
+  content: "";
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  left: -20%;
+  background: #0c356a;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  rotate: 90deg;
+  z-index: 0;
+}
+.sec2_title :nth-child(3):hover::before {
+  transition: 0.2s;
+  rotate: 0deg;
+}
+.sec2_title :nth-child(3)::after {
+  content: "";
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  right: -20%;
+  background: #0c356a;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  rotate: -90deg;
+  z-index: 0;
+}
+.sec2_title :nth-child(3):hover::after {
+  transition: 0.2s;
+  rotate: 0deg;
+}
+.title_child {
+  text-align: center;
+  font-size: 3rem;
+}
+@media (max-width: 1000px) {
+  .sec2_title,
+  .title_child {
+    text-align: center;
+  }
+}
+
+.cards_parent {
+  min-height: 100rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  place-items: center;
+}
+.card {
+  height: 31rem;
+  width: 19rem;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 10%;
+  overflow: hidden;
+  background: radial-gradient(
+        circle at 100% 100%,
+        #ffffff 0,
+        #ffffff 6px,
+        transparent 6px
+      )
+      0% 0%/10px 10px no-repeat,
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 6px, transparent 6px)
+      100% 0%/10px 10px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 6px, transparent 6px)
+      0% 100%/10px 10px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 6px, transparent 6px) 100%
+      100%/10px 10px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 8px)
+      calc(100% - 20px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 20px)
+      calc(100% - 8px) no-repeat,
+    linear-gradient(78deg, #c514b6 0%, #183048 100%);
+  border-radius: 10px;
+  padding: 28px;
+  box-sizing: border-box;
+}
+.card :nth-child(2) {
+  color: #12396b;
+}
+.card:hover {
+  background: radial-gradient(
+        circle at 100% 100%,
+        #ffffff 0,
+        #ffffff 6px,
+        transparent 6px
+      )
+      0% 0%/10px 10px no-repeat,
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 6px, transparent 6px)
+      100% 0%/10px 10px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 6px, transparent 6px)
+      0% 100%/10px 10px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 6px, transparent 6px) 100%
+      100%/10px 10px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 8px)
+      calc(100% - 20px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 20px)
+      calc(100% - 8px) no-repeat,
+    linear-gradient(
+      17deg,
+      #b90fe0 0%,
+      #fc1897 15.08%,
+      #e7160d 34.304%,
+      #e2551e 68.318%,
+      #f714f6 100%
+    );
+  border-radius: 10px;
+  padding: 28px;
+  box-sizing: border-box;
+}
+
+.cardImg {
+  height: 40%;
+  width: 100%;
+  object-fit: none;
+}
+
+@media (max-width: 424px) {
+  .cards_parent {
+    grid-template-columns: auto;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 800px) {
+  .cards_parent {
+    grid-template-columns: auto auto;
+  }
+}
+
+.home_sec3_title {
+  margin: 4rem;
+}
+.home_sec3_title :nth-child(n) {
+  font-size: 1.5rem;
+  text-align: start;
+  color: black;
+}
+
+.contactUsNow_parent {
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contactUsNow {
+  height: 4rem;
+  width: 12rem;
+  border: none;
+  border-radius: 11px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: 3px solid #0c356a;
+}
+.contactUsNow:hover {
+  background: #0c356a;
+  color: white;
+}
+
+.contactUsNow_parent :nth-child(2) {
+  font-size: 3rem;
+}
