@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import bg from "./imgs/Responsive-amico.svg";
+import ScrollBtn from "./ScrollBtn";
 function Home() {
   return (
     <>
@@ -170,6 +171,7 @@ function Home() {
           <button className="contactUsNow">تواصل معنا الان</button>
           <button>اكتشف مجموعتنا الكامله من خدمات التسويق الرقمي</button>
         </div>
+        <ScrollBtn/>
       </section>
     </>
   );

@@ -21,12 +21,12 @@ function NavBar() {
         </button>
         <ul className={`nav-list ${mobileMenuOpen ? "active" : ""}`}>
           <li>
-            <Link className="Link" to="#">
+            <Link className="Link" to="/">
               الرئيسية
             </Link>
           </li>
           <li>
-            <Link className="Link" to="#">
+            <Link className="Link" to="/AboutUs">
               من نحن
             </Link>
           </li>
